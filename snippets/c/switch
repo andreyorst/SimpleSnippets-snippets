@@ -1,5 +1,5 @@
 switch (${1:/* variable */}) {
-	case ${2:/* variable case */}:
+	case ${2:var}:
 		${3:/* condition */}
 		${0:break;}
 }
