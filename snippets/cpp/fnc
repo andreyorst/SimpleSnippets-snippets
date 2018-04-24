@@ -1,0 +1,4 @@
+${1:return_type} ${2:function_name}(${3:param})
+{
+	${0:/* FunctionBody */}
+}

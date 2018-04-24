@@ -1,0 +1,14 @@
+#ifndef ${2|CLASS_H}
+#define CLASS_H
+
+class ${1|Name}
+{
+public:
+	Name();
+	virtual ~Name();
+
+private:
+	${0:/* data */}
+};
+
+#endif /* CLASS_H */
