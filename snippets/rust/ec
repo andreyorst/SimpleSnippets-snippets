@@ -1,0 +1,1 @@
+extern crate ${1:sync}
