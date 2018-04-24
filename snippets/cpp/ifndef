@@ -1,3 +1,0 @@
-#ifndef ${1|NAME}
-#define NAME ${0:value}
-#endif /* ifndef NAME */

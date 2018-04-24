@@ -1,0 +1,3 @@
+#if ${1:EXPR}
+${0:/* condition */}
+#endif
