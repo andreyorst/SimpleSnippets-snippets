@@ -1,0 +1,34 @@
+||:       Closure, anonymous function (inline)
+|}:       Closure, anonymous function (block)
+(#)attr:  #[..]
+(#)allow: Allow lint attribute
+(#)cfg:   Cfg attribute
+(#)feat:  Feature attribute
+bench:    Bench function
+crate:    Crate meta attributes
+#der:     #[derive(..)]
+ec:       Extern crate
+ecl:      Extern crate log
+fd:       Struct field definition
+fn:       Function definition
+pfn:      public function definition
+arg:      Function argument definition
+let:      let variable declaration with type inference
+letm:     let mutable variable declaration with type inference
+lett:     let variable declaration with explici type annotation
+lettm:    let mutable variable declaration with explici type annotation
+macro:    macro_rules
+main:     main function
+pmain:    public main function
+mod:      module
+new:      Constructor function
+opt:      Option<T>
+pri:      print!(...)
+prif:     print({}, ...)
+pln:      println!(...)
+plnf:     println!({}, ...)
+fmt:      format!(...)
+res:      Result<T, E>
+test:     Unit test function
+testmod:  Test module
+todo:     TODO comment
