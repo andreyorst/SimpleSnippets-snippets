@@ -1,1 +1,1 @@
-extern crate ${1:sync}
+extern crate ${0:sync}
