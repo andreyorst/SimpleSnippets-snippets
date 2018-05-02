@@ -4,9 +4,9 @@
 (#)allow: Allow lint attribute
 (#)cfg:   Cfg attribute
 (#)feat:  Feature attribute
+(#)der:   #[derive(..)]
 bench:    Bench function
 crate:    Crate meta attributes
-#der:     #[derive(..)]
 ec:       Extern crate
 ecl:      Extern crate log
 fd:       Struct field definition
@@ -32,3 +32,26 @@ res:      Result<T, E>
 test:     Unit test function
 testmod:  Test module
 todo:     TODO comment
+if:       if
+ife:      if / else
+el:       else
+eli:      else if
+mat:      match pattern
+case:     Case clause of pattern match
+loop:     loop {}
+wh:       while loop
+for:      for ... in ... loop
+fixme:    FIXME comment
+st:       Struct definition
+impl:     Struct/Trait implementation
+type:     Type alias
+enum:     enum definition
+trait:    Trait definition
+drop:     Drop trait implementation (destructor)
+ss:       static string declaration
+stat:     static item declaration
+scoped:   spawn a scoped thread
+spawn:    spawn a thread
+chan:     Declare (Sender, Receiver) pair of asynchronous channel()
+as:       assert!
+ase:      assert_eq!

@@ -1,0 +1,9 @@
+pub struct ${1|name} {
+	${0:/* str body */}
+}
+
+impl name {
+	pub fn new(${2:item}) -> Self {
+		name { ${3:/* pub body */} }
+	}
+}

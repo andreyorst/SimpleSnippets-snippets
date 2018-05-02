@@ -1,0 +1,1 @@
+type ${1:NewName} = ${0:i32}
