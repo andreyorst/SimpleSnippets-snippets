@@ -89,13 +89,12 @@ all triggers, and short description about what this trigger does. For example:
   `main: main function definition`
   `if: if(...) {...}`
 
-As you may noticed, description filename is containing filetype. This is done
-to make it harder to suddenly expand this file as a snippet.
-
 This file is used by `SimpleSnippets#listSnippets()` function. But this file is
 optional, because if this file is not exists, this function will use system `ls`
-command output instead. However if you started to write this file please
-include all triggers in it.
+command output instead, and generates descriptions based on first line of
+snippet's body. This may be used as default behaviour, however may not always
+be best option. If some trigger wasn't found in description file, description
+is generated for it too.
 
 ================================================================================
 4. Contributing                             *SimpleSnippets-snippets-contributing*
