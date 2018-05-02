@@ -1,5 +1,5 @@
-date        Todays date
-ddate       dd/mm/yyyy
-time        hh:mm
-todo        todo template
-lorem       Test snippet
+date:        Todays date
+ddate:       dd/mm/yyyy
+time:        hh:mm
+todo:        todo template
+lorem:       Test snippet
