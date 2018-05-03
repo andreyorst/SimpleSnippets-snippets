@@ -1,5 +1,5 @@
-#ifndef ${2|CLASS_H}
-#define CLASS_H
+#ifndef ${3|${2!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H}
+#define ${4!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H
 
 class ${1|Name}
 {
@@ -11,4 +11,4 @@ private:
 	${0:/* data */}
 };
 
-#endif /* CLASS_H */
+#endif /* ${5!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H */
