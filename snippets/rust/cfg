@@ -1,1 +1,1 @@
-#[cfg(${0:target_os = "linux"})]
+#[cfg(${0:target_os = "${1!uname}"})]

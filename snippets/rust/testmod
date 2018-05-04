@@ -2,5 +2,5 @@
 mod tests {
 	use super::${1:entry};
 	
-	test${0:_name}
+	${0:test_name}
 }
