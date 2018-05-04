@@ -1,57 +1,70 @@
-||:       Closure, anonymous function (inline)
-|}:       Closure, anonymous function (block)
-(#)attr:  #[..]
-(#)allow: Allow lint attribute
-(#)cfg:   Cfg attribute
-(#)feat:  Feature attribute
-(#)der:   #[derive(..)]
-bench:    Bench function
-crate:    Crate meta attributes
-ec:       Extern crate
-ecl:      Extern crate log
-fd:       Struct field definition
-fn:       Function definition
-pfn:      public function definition
-arg:      Function argument definition
-let:      let variable declaration with type inference
-letm:     let mutable variable declaration with type inference
-lett:     let variable declaration with explici type annotation
-lettm:    let mutable variable declaration with explici type annotation
-macro:    macro_rules
-main:     main function
-pmain:    public main function
-mod:      module
-new:      Constructor function
-opt:      Option<T>
-pri:      print!(...)
-prif:     print({}, ...)
-pln:      println!(...)
-plnf:     println!({}, ...)
-fmt:      format!(...)
-res:      Result<T, E>
-test:     Unit test function
-testmod:  Test module
-todo:     TODO comment
-if:       if
-ife:      if / else
-el:       else
-eli:      else if
-mat:      match pattern
-case:     Case clause of pattern match
-loop:     loop {}
-wh:       while loop
-for:      for ... in ... loop
-fixme:    FIXME comment
-st:       Struct definition
-impl:     Struct/Trait implementation
-type:     Type alias
-enum:     enum definition
-trait:    Trait definition
-drop:     Drop trait implementation (destructor)
-ss:       static string declaration
-stat:     static item declaration
-scoped:   spawn a scoped thread
-spawn:    spawn a thread
-chan:     Declare (Sender, Receiver) pair of asynchronous channel()
-as:       assert!
-ase:      assert_eq!
+#cfg:        #[cfg(target_os = "OS")]
+plnf:        println!({}, ...)
+letm:        let mutable variable declaration with type inference
+der:         #[derive(Debug)]
+lett:        let variable declaration with explici type annotation
+ecl:         Extern crate log
+mat:         match pattern
+lettm:       let mutable variable declaration with explici type annotation
+wh:          while loop
+prif:        print({}, ...)
+attr:        #[inline]
+drop:        Drop trait implementation (destructor)
+trait:       Trait definition
+#allow:      #[allow(unused_variable)]
+ec:          Extern crate
+el:          else
+type:        Type alias
+pri:         print!(...)
+new:         Constructor function
+testmod:     Test module
+allow:       #[allow(unused_variable)]
+pmain:       public main function
+(#)allow:    Allow lint attribute
+impl:        Struct/Trait implementation
+||:          Closure, anonymous function (inline)
+|}:          Closure, anonymous function (block)
+macro:       macro_rules
+(#)der:      #[derive(..)]
+stat:        static item declaration
+crate:       Crate meta attributes
+#der:        #[derive(Debug)]
+fixme:       FIXME comment
+spawn:       spawn a thread
+loop:        loop {}
+cfg:         #[cfg(target_os = "OS")]
+chan:        Declare (Sender, Receiver) pair of asynchronous channel()
+mod:         module
+arg:         Function argument definition
+mod:         module
+pfn:         public function definition
+fd:          Struct field definition
+ife:         if / else
+fn:          Function definition
+stn:         pub struct name
+for:         for ... in ... loop
+case:        Case clause of pattern match
+todo:        TODO comment
+as:          assert!
+opt:         Option<T>
+(#)feat:     Feature attribute
+enum:        enum definition
+test:        Unit test function
+eli:         else if
+while:       while /* condition */
+ss:          static string declaration
+if:          if
+#feat:       #![feature(plugin)]
+let:         let variable declaration with type inference
+pln:         println!(...)
+scoped:      spawn a scoped thread
+feat:        #![feature(plugin)]
+(#)attr:     #[..]
+bench:       Bench function
+fmt:         format!(...)
+main:        main function
+res:         Result<T, E>
+(#)cfg:      Cfg attribute
+st:          Struct definition
+#attr:       #[inline]
+ase:         assert_eq!
