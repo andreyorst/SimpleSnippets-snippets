@@ -1,3 +1,2 @@
-namespace ${0|Name} {
-	
-}; /* Name */
+namespace ${0:Name} {
+}; /* $0 */

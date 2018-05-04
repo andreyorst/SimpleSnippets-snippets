@@ -1,14 +1,14 @@
-#ifndef ${3|${2!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H}
-#define ${4!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H
+#ifndef ${3:${2!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H}
+#define $3
 
-class ${1|Name}
+class ${1:Name}
 {
 public:
-	Name();
-	virtual ~Name();
+	$1();
+	virtual ~$1();
 
 private:
 	${0:/* data */}
 };
 
-#endif /* ${5!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H */
+#endif /* $3 */
