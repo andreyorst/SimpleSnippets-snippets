@@ -38,3 +38,4 @@ tstr:       typedef struct Name { ... } Name;
 typedef:    typedef
 vector:     vector<type> v
 while:      while () { ... }
+guard:      header include guard
