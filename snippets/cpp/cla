@@ -1,7 +1,7 @@
-#ifndef ${4:${3!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g')}_H}
+#ifndef ${4:${3!substitute(substitute(expand('%:t'), '.*', '\U&', 'g'), '\v\..*', '', 'g') | noh}_H}
 #define $4
 
-class ${2:${1!substitute(substitute(expand('%:t'), '\v(<.)(.*)', '\u\1\2', 'g'), '\v\..*', '', 'g')}}
+class ${2:${1!substitute(substitute(substitute(expand('%:t'), '\v(<.)(.*)', '\u\1\2', 'g'), '\v\..*', '', 'g'), '\v_(\w)', '\u\1', 'g') | noh}}
 {
 public:
 	$2();
