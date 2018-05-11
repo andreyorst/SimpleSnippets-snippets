@@ -1,1 +1,1 @@
-#[cfg(${0:target_os = "${1!uname}"})]
+#[cfg(${0!echo "target_os = \"$(uname)\""})]
