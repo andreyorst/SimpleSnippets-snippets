@@ -1,84 +1,100 @@
 *SimpleSnippets-snippets.txt*
+*SimpleSnippets-snippets* *external-snippets*
 
 Snippet Files for SimpleSnippets-snippets.vim~
 
-SimpleSnippets-snippets                                  *SimpleSnippets-snippets*
 
- 1. Description ............................ |SimpleSnippets-snippets-description|
-    1.1 Requirements ...................... |SimpleSnippets-snippets-requirements|
-    1.2 Acknowledgments ................ |SimpleSnippets-snippets-acknowledgments|
- 2. Installation and Updating ........... |SimpleSnippets-snippets-installnupdate|
- 3. Syntax ...................................... |SimpleSnippets-snippets-syntax|
-    3.1 Adding FileType ................ |SimpleSnippets-snippets-adding-filetype|
-    3.2 Creating Snippets ............ |SimpleSnippets-snippets-creating-snippets|
-    3.3 Snippets Descriptions ............. |SimpleSnippets-snippets-descriptions|
- 4. Contributing .......................... |SimpleSnippets-snippets-contributing|
+==============================================================================
+CONTENTS                                               *SimpleSnippets-contents*
 
-================================================================================
-1. Description                               *SimpleSnippets-snippets-description*
+ 1. Description ......................... |SimpleSnippets-snippets-description|
+    1.1 Requirements ................... |SimpleSnippets-snippets-requirements|
+    1.2 Acknowledgments ............. |SimpleSnippets-snippets-acknowledgments|
+ 2. Installation and Updating ........ |SimpleSnippets-snippets-installnupdate|
+ 3. Syntax ................................... |SimpleSnippets-snippets-syntax|
+    3.1 Adding FileType ............. |SimpleSnippets-snippets-adding-filetype|
+    3.2 Creating Snippets ......... |SimpleSnippets-snippets-creating-snippets|
+    3.3 Snippets Descriptions .......... |SimpleSnippets-snippets-descriptions|
+ 4. Contributing ....................... |SimpleSnippets-snippets-contributing|
 
-SimpleSnippets-snippets provides various predefined snippet files for various
+
+==============================================================================
+1. Description                             *SimpleSnippets-snippets-description*
+
+SimpleSnippets-snippets provides various predefined snippet files for  various
 languages.
 
-                                            *SimpleSnippets-snippets-requirements*
-1.1 Requirements
+
+1.1 Requirements                          *SimpleSnippets-snippets-requirements*
 ----------------
 
-This plugin can be used only with SimpleSnippets.vim. Snippet files are
-incompatible with other snippet managers because of implementation. Therefore
+This plugin can be used  only  with  SimpleSnippets.vim.   Snippet  files  are
+incompatible with other snippet managers because of implementation.  Therefore
 snippets for some languages may not be presented here, and if someone can help
-me with porting snippets from other snippet collections, your help is much
+me with porting snippets from other snippet collections,  your  help  is  much
 appreciated.
 
-                                         *SimpleSnippets-snippets-acknowledgments*
-1.3 Acknowledgments
+
+1.3 Acknowledgments                    *SimpleSnippets-snippets-acknowledgments*
 -------------------
 
-SimpleSnippets-snippets currently contains ports of snippets from
-honza/vim-snippets. This is a huge collection of snippets made by large
-community. Because of snippet syntax differences SimpleSnippets.vim can't use
+SimpleSnippets-snippets   currently   contains   ports   of   snippets    from
+honza/vim-snippets.  This is a huge  collection  of  snippets  made  by  large
+community.  Because of snippet syntax differences SimpleSnippets.vim can't use
 these snippets, therefore they can be ported accordingly to SimpleSnippets.vim
 documentation.
 
-================================================================================
-2. Installation and Updating              *SimpleSnippets-snippets-installnupdate*
 
-Recommended way to install SimpleSnippets-snippets is to use plugin manager, such
-as Vundle, Pathogen, dein.nvim or others. You can still install it manually by
-cloning master branch from GitHub. Assuming you're using Vundle add this line
-to your configuration file:
+==============================================================================
+2. Installation and Updating            *SimpleSnippets-snippets-installnupdate*
 
-  `Plugin 'andreyorst/SimpleSnippets-snippets'`
+Recommended way to install SimpleSnippets-snippets is to use  plugin  manager,
+such as Vundle, Pathogen, dein.nvim or  others.   You  can  still  install  it
+manually by cloning master branch from GitHub.
 
-================================================================================
-3. Syntax                                         *SimpleSnippets-snippets-syntax*
 
-This section fill describe how to create and add snippets for
-SimpleSnippets-snippets plugin. For snippet syntax itself please refer to
-SimpleSnippets.vim documentation.
+==============================================================================
+3. Syntax                                       *SimpleSnippets-snippets-syntax*
 
-                                         *SimpleSnippets-snippets-adding-filetype*
-3.1 Creating snippet filetype
+This section will describe how to create snippets for  SimpleSnippets-snippets
+plugin.   For  snippet  syntax  itself  please  refer  to   SimpleSnippets.vim
+documentation.
+
+
+3.1 Creating snippet filetype          *SimpleSnippets-snippets-adding-filetype*
 -----------------------------
 
-Snippets are located at folder 'snippets' in your plugin installation directory.
-Snippet files are stored per filetype, inside separate folders named
-accordingly to those filetypes. You can add your filetype to this plugin, if
-vim supports it, or has plugin for this filetype. Please name filetype
-accordingly to how Vim displays it. You can check current filetype by
+Snippets are located at folder `snippets` in your plugin installation directory.
+Snippet  files  are  stored  per  filetype,  inside  separate  folders   named
+accordingly to those filetypes.  You can add your filetype to this plugin,  if
+vim supports it, or has  plugin  for  this  filetype.   Please  name  filetype
+accordingly to how Vim  displays  it.   You  can  check  current  filetype  by
 executing:
 
   `:echo &ft`
 
-                                       *SimpleSnippets-snippets-creating-snippets*
-3.2 Creating snippets
+If some filetypes are logically similar, like `tex` and `latex`, and  snippets
+can be used across them without any change, consider adding them  all  to  the
+same  folder,  and  add  this  to  plugin  similar   filetypes   variable   at
+`./plugin/SimpleSnippets-snippets.vim`:
+
+  `let g:SimpleSnippets_snippets_similar_filetypes = [`
+  `    \ ['tex', 'plaintex'],`
+  `    \ ['bash', 'zsh', 'sh'],`
+      `\ ['your', 'filetypes', 'here'],`
+  `\ ]`
+
+
+3.2 Creating snippets                *SimpleSnippets-snippets-creating-snippets*
+---------------------
 
 Snippets are stored inside filetype directory. Snippet file name is it's
 trigger, so filename should be short and don't overlap. For more info on how
 to write snippet files, please check SimpleSnippets.vim documentation.
 
-                                            *SimpleSnippets-snippets-descriptions*
-3.3 Description file
+
+3.3 Description file                      *SimpleSnippets-snippets-descriptions*
+--------------------
 
 Snippets can contain description file, which is plain text file, that contains
 all triggers, and short description about what this trigger does. For example:
@@ -91,23 +107,26 @@ all triggers, and short description about what this trigger does. For example:
 
 This file is used by `SimpleSnippets#listSnippets()` function. But this file is
 optional, because if this file is not exists, this function will use system `ls`
-command output instead, and generates descriptions based on first line of
-snippet's body. This may be used as default behaviour, however may not always
-be best option. If some trigger wasn't found in description file, description
+command output instead, and generates descriptions  based  on  first  line  of
+snippet's body.  This may be used as default behaviour, however may not always
+be best option.  If some trigger wasn't found in description file, description
 is generated for it too.
 
-================================================================================
-4. Contributing                             *SimpleSnippets-snippets-contributing*
 
-SimpleSnippets-snippets aims to become at least as big as vim-snippets, or
-bigger. This plugin is hard to develop alone because I don't know all
-languages, and can't make meaningful snippets for them by myself. If you're
-want to help, you can clone this plugin GitHub repo, add desired snippets, or
+==============================================================================
+4. Contributing                           *SimpleSnippets-snippets-contributing*
+
+SimpleSnippets-snippets aims to become at least as  big  as  vim-snippets,  or
+bigger.  This plugin is hard  to  develop  alone  because  I  don't  know  all
+languages, and can't make meaningful snippets for them by myself.   If  you're
+want to help, you can clone this plugin GitHub repo, add desired snippets,  or
 fix existing ones, and file a Pull Request. I'll test all snippets, and accept
 it.
 
 If you found a bug in snippet definition please consider opening an issue at:
 https://github.com/andreyorst/SimpleSnippets-snippets/issues
 
-vim:tw=80:ts=8:ft=help:norl:
+
+==============================================================================
+ vim:tw=78:ts=8:ft=help:norl:nornu:nonu:scl=no
 
