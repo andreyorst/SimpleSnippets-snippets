@@ -36,6 +36,6 @@ tp:         template
 try:        try { ... } catch() { ... }
 tstr:       typedef struct Name { ... } Name;
 typedef:    typedef
-vector:     vector<type> v
+vec:        vector<type> v
 while:      while () { ... }
 guard:      header include guard
