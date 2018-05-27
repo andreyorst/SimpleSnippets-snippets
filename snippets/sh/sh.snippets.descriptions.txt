@@ -1,0 +1,13 @@
+case:  case .. esac (case)
+elif:  elif .. (elif)
+!env:  #!/usr/bin/env (!env)
+for:   for ... done (for)
+forin: for ... in ... done (forin)
+fun:   function function_name()
+fun-sh: function_name()
+go:     while getopts
+here:  here document (here)
+if:    if ... then (if)
+sbash: safe bash options
+until: until ... (done)
+while: while ... (done)
