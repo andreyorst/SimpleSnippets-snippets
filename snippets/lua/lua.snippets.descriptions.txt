@@ -1,0 +1,14 @@
+#!:     Shebang header
+do:     New function
+eif:    pair for loop
+eife:   ipair for foop
+for:    numeric for loop
+fori:   do block
+forp:   repeat loop
+fun:    while loop
+if:     if statement
+ife:    if/else statement
+local:  if/elseif statement
+pcall:  if/elseif/else statement
+repeat: pcall statement
+while:  local x = 1
