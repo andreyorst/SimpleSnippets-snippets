@@ -1,8 +1,17 @@
-#!:    #!/usr/bin/env python3
-def:   def function_name(args)
-elif:  elif .. (elif)
-for:   for ... in ... :
-if:    if ... :
-while: while ... :
-im:    import ...
-fi:    from ... import ...
+#!:     #!/usr/bin/env python3
+def:    def function_name(args)
+elif:   elif .. (elif)
+for:    for ... in ... :
+fir:    for i in range(...):
+if:     if ... :
+ifmain: if __name__ == '__main__':
+else:   else ... (else)
+while:  while ... :
+im:     import ...
+fi:     from ... import ...
+class:  class with constructor snippet
+try:    try: ... except:
+tryf:   try: ... except: ... finally:
+trye:   try: ... except: ... else:
+tryef:  try: ... except: ... else: ... finally:
+with:   with ... as ...:
