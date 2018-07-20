@@ -1,4 +1,1 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-${0:#code}
+${0:#!/usr/bin/env python3}
